@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('#1. Checkout'){
       steps{
-        git url:'https://github.com/rkotian024/Docker', branch:'main'
+        git url:'https://github.com/rkotian024/Docker', credentialsId: 'github-token', branch: 'main'
       }
   }
 
